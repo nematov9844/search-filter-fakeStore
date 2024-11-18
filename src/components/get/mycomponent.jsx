@@ -89,7 +89,7 @@ const MyComponent = () => {
                 </span>
                 {item.discount && (
                   <span className="text-red-500 font-bold text-lg">
-                    -{item.discount}%  ${item.price - ((item.price / 100 ) * item.discount).toFixed(2)} OFF
+                    -{item.discount}%  <span className="text-white ">${item.price - ((item.price / 100 ) * item.discount).toFixed(2)} OFF</span>
                   </span>
                 )}
               </div>
